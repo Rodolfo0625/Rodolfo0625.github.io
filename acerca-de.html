@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Team Los Pollos del West</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Team Los Pollos Del West</h1>
+    <img src="Imagenes/Background.png" alt="Sticker" class="header-image">
+</header>
+    
+    <nav>
+        <ul>
+            <li><a href="Inicio.html" class="nav-link">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="nav-link">Quiénes Somos</a></li>
+            <li><a href="integrantes.html"class="nav-link">Integrantes</a></li>
+            <li><a href="redes-sociales.html" class="nav-link">Redes Sociales</a></li>
+
+
+        </ul>
+    </nav>
+
+    <section id="acerca-de">
+        <h2>Acerca De</h2>
+        <p>Coloca aquí información relevante acerca del equipo y su historia.</p>
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2023 Team Los Pollos del West. Todos los derechos reservados.</p>
+    </footer>
+</body>
+<script>
+    // Obtener la URL de la página actual
+    var currentUrl = window.location.href;
+
+    // Obtener todos los enlaces de navegación
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    // Iterar sobre los enlaces y agregar la clase activa al enlace correspondiente
+    navLinks.forEach(function(link) {
+        if (link.href === currentUrl) {
+            link.classList.add('active');
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,466 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', sans-serif; /* Cambia 'Poppins' por el nombre de la fuente que elijas */
+   
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+}
+
+/* Encabezado */
+header {
+    font-family: "Arial Black", sans-serif;
+    font-size: 36px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: #f37021;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    position: relative;
+   
+}
+
+.fade-in-header {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.header-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    max-width: 75px;
+}
+@media (max-width: 767px) {
+    header {
+        font-size: 20px;
+        padding: 0.7rem 0; /* Ajusta el padding vertical para dispositivos móviles */
+    }
+    .header-image {
+        max-width: 60px; /* Ajusta el ancho máximo de la imagen para dispositivos móviles */
+    }
+
+}
+@media (min-width: 992px) {
+    header {
+        font-size: 30px; /* Ajusta el tamaño de la fuente según tus preferencias */
+        padding: 0.5rem 0; /* Ajusta el espaciado superior e inferior según tus preferencias */
+    }
+    .header-image {
+        max-width: 135px; /* Ajusta el ancho máximo de la imagen para computadoras */
+    }
+
+}
+/* Barra de navegación */
+nav {
+    font-family: "Georgia", serif;
+    font-size: 18px;
+    background-color: #075cbe;
+    padding: 1rem 0;
+    max-width: 100%;
+    overflow-x: scroll; /* Desplazamiento horizontal */
+    white-space: nowrap;
+   
+
+}
+
+.nav-link.active {
+    background-color: #f37021;
+    color: white;
+}
+
+/*para dispositivos moviles*/
+@media (max-width: 767px) {
+    nav {
+        font-size: 12px;
+        padding: 0.3rem;
+    }
+}
+/* Media query para pantallas grandes (computadoras) */
+@media (min-width: 992px) {
+    nav {
+        font-size: 30px;
+        padding: 1rem;
+    }
+    nav a {
+        padding: 2rem 4rem; /* Ajusta el padding según tus preferencias para pantallas grandes */
+    }
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos desde la izquierda */
+    width: fit-content; /* Ajusta el ancho del contenedor a su contenido */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+nav li {
+    margin: 0 0.5rem;
+}
+
+nav a {
+    color: #ffffff; /* Cambia este color al que desees para las letras */
+    background-color:#313131 ;
+    padding: 0.3rem 0.8rem;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+    background-color: #f37021;
+}
+
+
+/*inicio*/
+
+#contenido-inicio {
+    text-align: center;
+    padding: 3rem;
+    background-color: #f9f9f9;
+}
+
+.mensaje-bienvenida {
+    margin-bottom: 2rem;
+}
+
+.mensaje-bienvenida h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+}
+
+.mensaje-bienvenida p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.imagen-representativa img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.boton {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.7rem 2rem;
+    background-color: #f37021;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #e35b18;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    #contenido-inicio {
+        padding: 2rem;
+    }
+    .mensaje-bienvenida h2 {
+        font-size: 20px;
+    }
+    .mensaje-bienvenida p {
+        font-size: 19px;
+    }
+    .carousel{
+        max-width: 100%;
+        height: auto;
+    .boton {
+        margin: 0.5rem;
+        padding: 0.5rem 1.5rem;
+        font-size: 14px;
+    }
+}
+}
+/* Media query para pantallas grandes (computadoras) */
+@media (min-width: 992px) {
+    #contenido-inicio {
+        padding: 5rem;
+    }
+    .mensaje-bienvenida h2 {
+        font-size: 25px;
+    }
+    .mensaje-bienvenida p {
+        font-size: 22px;
+    }
+    .carousel{
+        max-width: 45%;
+        height: auto;
+    }
+    .boton {
+        margin: 1rem;
+        padding: 0.7rem 2rem;
+        font-size: 16px;
+    }
+}
+#quienes-somos {
+    background-color: #f9f9f9;
+    padding: 3rem;
+    text-align: center;
+}
+
+.contenido-quienes-somos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.historia, .valores-mision {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: 'Poppins', sans-serif; /* Cambia 'Poppins' por la fuente que desees */
+}
+
+.historia h3, .valores-mision h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.historia p, .valores-mision p {
+    font-size: 18px; /* Ajusta el tamaño de fuente según tus preferencias */
+    color: #555;
+    line-height: 1.5;
+}
+/* Imágenes en Quiénes Somos */
+.quienes-somos-imagen {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    display: block; /* Para centrar las imágenes */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+    
+}
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .contenido-quienes-somos {
+        grid-template-columns: 1fr;
+    }
+
+    .historia p, .valores-mision p {
+        font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+    /* Media query para pantallas grandes (computadoras) */
+@media (min-width: 992px) {
+    .contenido-quienes-somos {
+        gap: 3rem; /* Espaciado más amplio entre los elementos */
+    }
+
+    .historia, .valores-mision {
+        padding: 2.5rem; /* Mayor espacio interno */
+    }
+}
+}
+
+/* Estilos para la sección de integrantes */
+#integrantes {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    text-align: center;
+}
+
+.integrante {
+    margin-bottom: 2rem;
+}
+
+.integrante-cuadro {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.integrante-cuadro:hover {
+    transform: translateY(-10px);
+}
+
+.integrante img {
+    width: 250px; /* Ajusta el tamaño de las imágenes aquí */
+    height: 250px; /* Ajusta el tamaño de las imágenes aquí */
+    border-radius: 20px; /* Ajusta el valor del border-radius para hacer las imágenes ligeramente redondeadas */
+    object-fit: cover;
+}
+
+.integrante h3 {
+    font-size: 30px;
+    margin-top: 0.5rem;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .integrante img {
+        width: 200px;
+        height: 200px;
+    }
+    .integrante h3 {
+        font-size: 22px;
+    }
+}
+/* Media query para pantallas grandes (computadoras) */
+@media (min-width: 992px) {
+    .integrante-cuadro {
+        padding: 5rem; /* Ajusta el espaciado interno para pantallas grandes */
+    }
+    .integrante img {
+        width: 300px; /* Ajusta el tamaño de las imágenes en pantallas grandes */
+        height: 300px; /* Ajusta el tamaño de las imágenes en pantallas grandes */
+    }
+    .integrante h3 {
+        font-size: 36px; /* Ajusta el tamaño de las letras en pantallas grandes */
+    }
+}
+/* Estilos para la sección de redes sociales */
+#redes-sociales {
+    background-color: #f9f9f9;
+    padding: 4rem;
+    text-align: center;
+}
+
+.aviso {
+    margin-bottom: 2rem;
+}
+
+.aviso img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.aviso p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 1rem;
+}
+
+.redes h2 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.instagram-icon img {
+    width: 150px; /* Ajusta el tamaño del ícono de Instagram */
+    height: auto;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .instagram-icon img {
+        width: 120px; /* Ajusta el tamaño del ícono de Instagram en dispositivos móviles */
+    }
+}
+/* Media query para pantallas grandes (computadoras) */
+@media (min-width: 992px) {
+    #redes-sociales {
+        padding: 6rem; /* Ajusta el padding para pantallas grandes */
+    }
+    
+    .aviso {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+
+    .aviso img {
+        max-width: 60%;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instagram-icon img {
+        width: 150px; /* Ajusta el tamaño del ícono de Instagram en pantallas grandes */
+    }
+}
+
+/* Secciones */
+section {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Media query para pantallas grandes (computadoras) */
+@media (min-width: 992px) {
+    section {
+        padding: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+/* Estilo del carrusel */
+.carousel {
+    width: 85%; /* Ajusta el ancho del carrusel según tu diseño */
+    margin: 0 auto; /* Centra el carrusel horizontalmente */
+}
+
+/* Estilo de las imágenes dentro del carrusel */
+.carousel img {
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Pie de página */
+footer {
+    background-color: rgba(51, 51, 51, 0.7);
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 11px;
+    position: fixed; /* Cambia 'absolute' a 'fixed' */
+    left: 0; /* Añade esta propiedad */
+    right: 0; /* Añade esta propiedad */
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+/* Enlaces */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+

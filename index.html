@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Team Los Pollos del West</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+<script type="text/javascript" src="slick-1.8.1/slick/jquery.js"></script>
+<script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
+</head>
+
+<body>
+    <header class="fade-in-header">
+        <h1>Team Los Pollos Del West</h1>
+        <img src="imagenes/Background.png" alt="Sticker" class="header-image">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="nav-link">Quiénes Somos</a></li>
+            <li><a href="integrantes.html"class="nav-link">Integrantes</a></li>
+            <li><a href="redes-sociales.html" class="nav-link">Redes Sociales</a></li>
+
+        </ul>
+    </nav>
+    <section id="contenido-inicio">
+        <div class="mensaje-bienvenida">
+            <h2>¡Bienvenidos al Equipo Los Pollos del West!</h2>
+            <p>Sumérgete en la emocionante aventura de recorrer senderos, montañas y paisajes inexplorados a bordo de tu bicicleta. En Team Los Pollos del West, compartimos una pasión única por el ciclismo y la naturaleza.</p>
+        </div>
+        <div class="carousel">
+            <div><img src="imagenes/Imagen1.jpeg" alt="Imagen 1"></div>
+            <div><img src="imagenes/Imagen2.jpeg" alt="Imagen 2"></div>
+            <div><img src="imagenes/imagen3.jpeg" alt="Imagen 3"></div>
+            <div><img src="imagenes/imagen4.jpeg" alt="Imagen 4"></div>
+            <div><img src="imagenes/Imagen5.jpeg" alt="Imagen 5"></div>
+            <div><img src="imagenes/Imagen6.jpeg" alt="Imagen 6"></div>
+            <div><img src="imagenes/imagen7.jpeg" alt="Imagen 7"></div>
+            <div><img src="imagenes/imagen8.jpeg" alt="Imagen 8"></div>
+            <div><img src="imagenes/imagen9.jpeg" alt="Imagen 9"></div>
+            
+            <!-- Agrega más imágenes aquí -->
+        </div>
+        <div class="botones-secciones">
+            <a href="quienes-somos.html" class="boton">Conoce más sobre nosotros</a>
+            <a href="integrantes.html" class="boton">Conoce a nuestro equipo</a>
+        </div>
+    </section>
+   
+
+    <footer>
+        <p>&copy; 2023 Team Los Pollos del West. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Agrega este script para cargar el archivo JavaScript de Slick -->
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.js"></script>
+
+    <script>
+        // Aquí es donde inicializarás el carrusel de Slick
+        $(document).ready(function(){
+            $('.slider').slick({
+                // Configuración y opciones del carrusel
+            });
+        });
+    </script>
+</body>
+<script>
+    $(document).ready(function(){
+        $('.carousel').slick({
+            // Opciones de configuración aquí
+            dots: true, // Muestra los puntos de navegación
+            autoplay: true, // Inicia la reproducción automática
+            autoplaySpeed: 2000, // Intervalo entre imágenes (en milisegundos)
+        });
+    });
+</script>
+<script>
+    // Obtener la URL de la página actual
+    var currentUrl = window.location.href;
+
+    // Obtener todos los enlaces de navegación
+    var navLinks = document.querySelectorAll('.nav-link');
+
+    // Iterar sobre los enlaces y agregar la clase activa al enlace correspondiente
+    navLinks.forEach(function(link) {
+        if (link.href === currentUrl) {
+            link.classList.add('active');
+        }
+    });
+</script>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Team Los Pollos del West</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <h1>Team Los Pollos Del West</h1>
+        <img src="imagenes/Background.png" alt="Sticker" class="header-image">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="nav-link">Quiénes Somos</a></li>
+            <li><a href="integrantes.html"class="nav-link">Integrantes</a></li>
+            <li><a href="redes-sociales.html" class="nav-link">Redes Sociales</a></li>
+
+
+        </ul>
+    </nav>
+
+    <section id="quienes-somos">
+        <h2>Quiénes Somos</h2>
+        <div class="contenido-quienes-somos">
+            <div class="historia">
+                <h3>Nuestra Historia y Orígenes</h3>
+                <p>Los Pollos del West nacieron de la pasión compartida por el ciclismo y la exploración. Todo comenzó en un pequeño taller de bicicletas, donde un grupo de amigos decidió formar un equipo único y dedicado a la aventura en dos ruedas. A lo largo de los años, hemos crecido y evolucionado, pero nuestra esencia sigue siendo la misma: amantes de la bicicleta y amigos.</p>
+                <img src="imagenes/imagen10.jpeg" alt="Historia del Grupo" class="quienes-somos-imagen">
+            </div>
+            </div>
+            <div class="valores-mision">
+                <h3>Valores que nos Definen</h3>
+                <p>En Los Pollos del West, creemos en la amistad, el respeto mutuo y la camaradería. Nos esforzamos por crear un espacio inclusivo donde ciclistas de todas las edades y niveles de habilidad se sientan bienvenidos. Nuestro objetivo es promover la pasión por el ciclismo, el trabajo en equipo y el respeto por la naturaleza a través de nuestras actividades y eventos.</p>
+                <img src="imagenes/Imagen11.jpeg" alt="Valores del Grupo" class="quienes-somos-imagen">
+            </div>
+        </div>
+    </section>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Team Los Pollos del West. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Obtener la URL de la página actual
+        var currentUrl = window.location.href;
+    
+        // Obtener todos los enlaces de navegación
+        var navLinks = document.querySelectorAll('.nav-link');
+    
+        // Iterar sobre los enlaces y agregar la clase activa al enlace correspondiente
+        navLinks.forEach(function(link) {
+            if (link.href === currentUrl) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

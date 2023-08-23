@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Team Los Pollos del West</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header >
+        <h1>Team Los Pollos Del West</h1>
+        <img src="imagenes/Background.png" alt="Sticker" class="header-image">
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-link">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="nav-link">Quiénes Somos</a></li>
+            <li><a href="integrantes.html"class="nav-link">Integrantes</a></li>
+            <li><a href="redes-sociales.html" class="nav-link">Redes Sociales</a></li>
+
+
+        </ul>
+    </nav>
+
+    <section id="integrantes">
+        <h2>Nuestro Equipo</h2>
+        <div class="integrante">
+            <div class="integrante-cuadro">
+                <img src="imagenes/Integrante.1.jpg" alt="Daniel O'Farril">
+                <h3>Daniel O'Farril</h3>
+                <p>Apasionado por el ciclismo y la naturaleza. Siempre buscando nuevos retos en las rutas más desafiantes.</p>
+            </div>
+        </div>
+        <div class="integrante">
+            <div class="integrante-cuadro">
+                <img src="imagenes/Integrante.2.jpeg" alt="Javier Ruiz">
+                <h3>Javier Ruiz</h3>
+                <p>Experto en bicicletas de montaña y downhill. Siempre listo para enfrentar terrenos accidentados y empinadas pendientes.</p>
+            </div>
+        </div>
+        <div class="integrante">
+            <div class="integrante-cuadro">
+                <img src="imagenes/integrante.3.jpeg" alt="Rodolfo Abrego Turcios">
+                <h3>Rodolfo Abrego Turcios</h3>
+                <p>Ciclista urbano y amante de las travesías largas. Cree firmemente en que la bicicleta es el medio de transporte del futuro.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Team Los Pollos del West. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        // Obtener la URL de la página actual
+        var currentUrl = window.location.href;
+    
+        // Obtener todos los enlaces de navegación
+        var navLinks = document.querySelectorAll('.nav-link');
+    
+        // Iterar sobre los enlaces y agregar la clase activa al enlace correspondiente
+        navLinks.forEach(function(link) {
+            if (link.href === currentUrl) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
